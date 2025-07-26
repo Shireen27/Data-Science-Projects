@@ -10,7 +10,7 @@ Linear_Regression: The Algerian Forest Fires Dataset is a popular dataset used t
 
 logistic_regress: Logistic regression is a classification algorithm used to predict whether a given input belongs to a certain class when the target variable is binary. we use make_classification to create a dataset with two classes. We then do a train-test split and use logistic regression to predict the y-values. We also compute accuracy score, confusion matrix, and classification report with precision, recall and f1-score. A confusion matrix consists of numbers of 'Actual yes', 'Actual No', 'Predicted Yes' and 'Predicted No'. These give True Positive (TP), True Negative (TN), False Positive (FP) and False Negative (FN). The other matrix predicted are: Accuracy = (TP + TN) / Total, Precision = TP / (TP + FP) , Recall = TP / (TP + FN) and F1 Score = Harmonic mean of Precision and Recall.  
 
-Logistic_Multiclass: 
+Logistic_Multiclass: We do hyperparameter tuning and cross validation using RandomizedSearchCV to find the best parameters of logistic regression to be used on the above classification data. Then we create a dataset using make_classification with classes = 3 and use Logistic regression for multi-class and also for imbalanced dataset. We make ROC curve which plots TPR = TP/(TP + FN) on y-axis and FPR = FP/(FP + TN) on x-axis for a dataset with 2 classes.
 
 Random_forest:
 
