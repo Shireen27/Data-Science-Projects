@@ -12,7 +12,7 @@ logistic_regress: Logistic regression is a classification algorithm used to pred
 
 Logistic_Multiclass: We do hyperparameter tuning and cross validation using RandomizedSearchCV to find the best parameters of logistic regression to be used on the above classification data. Then we create a dataset using make_classification with classes = 3 and use Logistic regression for multi-class and also for imbalanced dataset. We make ROC curve which plots TPR = TP/(TP + FN) on y-axis and FPR = FP/(FP + TN) on x-axis for a dataset with 2 classes.
 
-Random_forest:
+Random_forest: We consider travel company dataset of available customers using which we want to reduce the marketing cost of a new package. We first check for NAN Values in the data, convert all gender categories into Male and Female and replace unmarried with single. We use fillna to fill the nan values with mode and median values. Divide the data into categorical and numeric features and use One hot encoding and standardscalar to transform the data. In the end we do train test split and use the randomforest classifier algorithm to predict if the product taken column. Then predict the accuracy score, precision and recall. Then used RandomizedSearchCV to find best possible params and fit the model using these again to attempt to get better accuracy score and recall.
 
 RandomForest_regress:
 
