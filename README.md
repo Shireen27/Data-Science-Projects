@@ -4,4 +4,16 @@ DecisionTree.ipynb : This code uses Decision Tree classifier to perform classifi
 
 Gas_prices_predict.ipynb : This code involves building a time series model that captures the patterns in the past natural gas prices data and incorporates additional features like seasonality using SARIMAX (Seasonal Auto Regressive Integrated Moving Average). ARIMA captures the general trend, movement and noise while SARIMAX captures recurring patterns at regular intervals which are seen in natural gas prices due to higher or lower demands in winters and summer.
 
-K-means clustering:The K-means clustering algorithm which is an unsupervised learning method that groups data into K distinct clusters is applied on make_blobs dataset. Randomly pics K number of centroids, assigns each datapoint in X to the nearest centroid using Euclidean distance. Then calculates new centroids as the mean of all points in each cluster. 
+K-means clustering:The K-means clustering algorithm which is an unsupervised learning method that groups data into K distinct clusters is applied on make_blobs dataset. Randomly picks K number of centroids, assigns each datapoint in X to the nearest centroid using Euclidean distance. Then calculates new centroids as the mean of all points in each cluster.
+
+Linear_Regression: The Algerian Forest Fires Dataset is a popular dataset used to study the occurrence of forest fires in Algeria. It consists of two regions — Bejaia and Sidi Bel-Abbes. We use Linear Regression to predict a numerical feature called FWI: Fire forest weather index which helps to categorizes the data into 'fire' and 'no fire'.  We start with data cleaning and EDA: check for nan values. There is one nan value which occurs at the heading when the region change from Bejaia to Sidi Bel. We drop this, and convert the regions with index 0 and 1 and convert 'object' type into int and float where possible. We label the not-fire to 0 and fire to 1. Using seaborn we make histograms, pie chart and count plot. We check for multicollinearity and drop features which are highly correlated. We then use linear regression from sklearn and predict FWI. We also use Ridge, Lasso and ElasticNet models. WE also implement cross validation on Lasso Regression model.
+
+logistic_regress:
+
+Logistic_Multiclass
+
+Random_forest:
+
+RandomForest_regress:
+
+Cafe_Sales_Cleaning: 
