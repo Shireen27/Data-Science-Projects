@@ -14,6 +14,6 @@ Logistic_Multiclass: We do hyperparameter tuning and cross validation using Rand
 
 Random_forest: We consider travel company dataset of available customers using which we want to reduce the marketing cost of a new package. We first check for NAN Values in the data, convert all gender categories into Male and Female and replace unmarried with single. We use fillna to fill the nan values with mode and median values. Divide the data into categorical and numeric features and use One hot encoding and standardscalar to transform the data. In the end we do train test split and use the randomforest classifier algorithm to predict if the product taken column. Then predict the accuracy score, precision and recall. Then used RandomizedSearchCV to find best possible params and fit the model using these again to attempt to get better accuracy score and recall.
 
-RandomForest_regress:
+RandomForest_regress: We use the cardekho dataset to predict the price of cars based on various features using Random Forest Regression. We used label encoder on the 'model' feature of the cars, onehot encoding on seller-type, fuel-type and transmission type and standardscalar on numeric features. We then use train test split and various algorithms like RandomForest Regression,  Ridge, Lasso, Decision Tree and Adaboost to predict car prices and compare these algorithm results using RMSE, MAE and R2 score. We can also use RandomizedSearchCV to find best params for these models and redo the fit to get better metrics.
 
-Cafe_Sales_Cleaning: 
+Cafe_Sales_Cleaning: This is a dirty data from Kaggle where we attempt to clean the data and do visualization using pie chart, bar plots, and plot the data to study monthly trend of sales.
