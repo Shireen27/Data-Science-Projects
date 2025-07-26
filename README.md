@@ -8,9 +8,9 @@ K-means clustering:The K-means clustering algorithm which is an unsupervised lea
 
 Linear_Regression: The Algerian Forest Fires Dataset is a popular dataset used to study the occurrence of forest fires in Algeria. It consists of two regions — Bejaia and Sidi Bel-Abbes. We use Linear Regression to predict a numerical feature called FWI: Fire forest weather index which helps to categorizes the data into 'fire' and 'no fire'.  We start with data cleaning and EDA: check for nan values. There is one nan value which occurs at the heading when the region change from Bejaia to Sidi Bel. We drop this, and convert the regions with index 0 and 1 and convert 'object' type into int and float where possible. We label the not-fire to 0 and fire to 1. Using seaborn we make histograms, pie chart and count plot. We check for multicollinearity and drop features which are highly correlated. We then use linear regression from sklearn and predict FWI. We also use Ridge, Lasso and ElasticNet models. WE also implement cross validation on Lasso Regression model.
 
-logistic_regress:
+logistic_regress: Logistic regression is a classification algorithm used to predict whether a given input belongs to a certain class when the target variable is binary. we use make_classification to create a dataset with two classes. We then do a train-test split and use logistic regression to predict the y-values. We also compute accuracy score, confusion matrix, and classification report with precision, recall and f1-score. A confusion matrix consists of numbers of 'Actual yes', 'Actual No', 'Predicted Yes' and 'Predicted No'. These give True Positive (TP), True Negative (TN), False Positive (FP) and False Negative (FN). The other matrix predicted are: Accuracy = (TP + TN) / Total, Precision = TP / (TP + FP) , Recall = TP / (TP + FN) and F1 Score = Harmonic mean of Precision and Recall.  
 
-Logistic_Multiclass
+Logistic_Multiclass: 
 
 Random_forest:
 
